@@ -7,7 +7,7 @@ type Props = {};
 
 export default function Hero({}: Props) {
   const [text, count] = useTypewriter({
-    words: ['Jokes', 'Memes', 'Social media presence'],
+    words: ['Jokes', 'Memes', 'Revenue'],
     loop: true,
     delaySpeed: 2000,
   });
@@ -25,11 +25,18 @@ export default function Hero({}: Props) {
           YOUNGUN
         </h1>
         <h2 className=' text-2xl  scroll-px-10  text-gray-500'>
-          <span className='mr-3'>We create {text}</span>
+          <span className='mr-3 mt-5'>
+            We create <span className='text-red-400'>{text} </span>{' '}
+          </span>
           <Cursor cursorColor='white' />
         </h2>
 
-        <div className='pt-5'>
+        {/* <div className='pt-7 pb-5 px-10   scroll-px-10  text-gray-500'>
+          We are a humour-led creative agency that opens doors to the internet
+          culture for brands Powered by meme marketing
+        </div> */}
+
+        <div className='pt-7'>
           <Link href={'#about'}>
             <button className='heroButton'>About us</button>
           </Link>
