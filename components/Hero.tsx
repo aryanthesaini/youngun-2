@@ -13,16 +13,13 @@ export default function Hero({}: Props) {
   });
   return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+      {/* <img className='' src='https://testapp.youngun.in/static/media/youngunnew.b912bef6.jpg' /> */}
       <BackgroundCircles />
-      <img
-        className='relative rounded-full h-32 w-32 mx-auto object-cover'
-        src='https://testapp.youngun.in/static/media/youngunnew.b912bef6.jpg'
-        alt='youngun Logo'
-      />
+
       <div className='z-20'>
         <h1 className='text-3xl font-semibold uppercase  pb-2 tracking-[15px]'>
           {' '}
-          YOUNGUN
+          MAKE MEMES,<span className='text-red-400'> NOT ADS </span>
         </h1>
         <h2 className=' text-2xl  scroll-px-10  text-gray-500'>
           <span className='mr-3 mt-5'>
@@ -36,7 +33,7 @@ export default function Hero({}: Props) {
           culture for brands Powered by meme marketing
         </div> */}
 
-        <div className='pt-7'>
+        {/* <div className='pt-7'>
           <Link href={'#about'}>
             <button className='heroButton'>About us</button>
           </Link>
@@ -49,7 +46,7 @@ export default function Hero({}: Props) {
           <Link href={'/'}>
             <button className='heroButton'>Reach Out</button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );
