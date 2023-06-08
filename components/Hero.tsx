@@ -14,14 +14,19 @@ export default function Hero({}: Props) {
   return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
       {/* <img className='' src='https://testapp.youngun.in/static/media/youngunnew.b912bef6.jpg' /> */}
-      <BackgroundCircles />
+      {/* <BackgroundCircles /> */}
+      <h1 className='text-sm md:text-md uppercase  pb-2 tracking-[12px]  px-4 font-light'>
+        YOUNGUN
+      </h1>
 
       <div className='z-20'>
-        <h1 className='text-3xl font-semibold uppercase  pb-2 tracking-[15px]'>
+        <h1
+          className='text-xl md:text-3xl font-semibold uppercase  pb-5 tracking-[12px]  md:tracking-[15px] px-4
+        '>
           {' '}
           MAKE MEMES,<span className='text-red-400'> NOT ADS </span>
         </h1>
-        <h2 className=' text-2xl  scroll-px-10  text-gray-500'>
+        <h2 className=' md:text-2xl  scroll-px-10  text-gray-500'>
           <span className='mr-3 mt-5'>
             We create <span className='text-red-400'>{text} </span>{' '}
           </span>
