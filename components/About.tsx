@@ -6,11 +6,7 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      className=' flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
+    <div className=' flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
       <h3 className='absolute top-24 uppercase tracking-[15px]  text-gray-500 text-xl '>
         About us
       </h3>
@@ -45,7 +41,7 @@ function About({}: Props) {
           <span className='text-red-500 '>meme marketing</span>
         </p>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
