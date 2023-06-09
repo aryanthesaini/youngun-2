@@ -5,7 +5,7 @@ type Props = {};
 
 function TeamMembers({}: Props) {
   return (
-    <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[600px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden '>
+    <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[600px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-70 cursor-pointer transition-opacity duration-200 overflow-hidden '>
       <motion.img
         initial={{
           y: -100,
@@ -25,8 +25,8 @@ function TeamMembers({}: Props) {
       />
 
       <div className='px-0 md:px-10'>
-        <h4 className='text-4xl font-light'>SAKSHAM JADON</h4>
-        <p className='font-bold text-2xl mt-1 py-2'>Founder</p>
+        <h4 className='text-2xl font-light'>SAKSHAM JADON</h4>
+        <p className='font-bold text-xl mt-1 py-2'>Founder</p>
 
         <ul className='list-disc space-y-4 ml-5 text-lg font-thin'>
           <li>what they do</li>
