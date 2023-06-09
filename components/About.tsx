@@ -24,7 +24,7 @@ function About({}: Props) {
         }}
         // viewport={{ once: true }} //optional
         src='https://testapp.youngun.in/static/media/youngunnew.b912bef6.jpg'
-        className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-64 xl:w-[400px] xl:h-[400px]'
+        className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-64 xl:w-[300px] xl:h-[300px]  '
       />
 
       <div className='space-y-10 px-0 md:px-10'>
