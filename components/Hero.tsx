@@ -14,7 +14,7 @@ export default function Hero({}: Props) {
   return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
       {/* <img className='' src='https://testapp.youngun.in/static/media/youngunnew.b912bef6.jpg' /> */}
-      {/* <BackgroundCircles /> */}
+      <BackgroundCircles />
       <h1 className='text-sm md:text-md uppercase  pb-2 tracking-[12px]  px-4 font-light'>
         YOUNGUN
       </h1>
