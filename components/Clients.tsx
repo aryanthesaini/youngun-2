@@ -27,7 +27,7 @@ function Clients({}: Props) {
         Hover over the icons
       </h3>
 
-      <div className='grid grid-cols-4 gap-5 mt-10 pt-10'>
+      <div className='grid grid-cols-4 gap-5 mt-10 pt-10 px-2'>
         <Client />
         <Client />
         <Client />
