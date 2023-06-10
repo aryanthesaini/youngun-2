@@ -5,9 +5,11 @@ import { motion } from 'framer-motion';
 
 type Props = {
   directionLeft?: boolean;
+  name: string;
+  url: string;
 };
 
-function Client({ directionLeft }: Props) {
+function Client({ directionLeft, name, url }: Props) {
   return (
     <div className='group relative flex cursor-pointer'>
       <motion.img
@@ -20,10 +22,16 @@ function Client({ directionLeft }: Props) {
         whileInView={{
           opacity: 1,
         }}
-        className='rounded-full border border-gray-500 object-cover w-20 h-20 xl:w-28 xl:h-28 filter group-hover:grayscale'
-        src='https://cdn.vox-cdn.com/thumbor/sW5h16et1R3au8ZLVjkcAbcXNi8=/0x0:3151x2048/2000x1333/filters:focal(1575x1024:1576x1025)/cdn.vox-cdn.com/uploads/chorus_asset/file/15844974/netflixlogo.0.0.1466448626.png'
+        className='rounded-full border border-gray-500 object-cover w-20 h-20 xl:w-28 xl:h-28 filter group-hover:grayscale transition-duration-300 ease-in-out'
+        src={url}
         alt='logos'
       />
+
+      <div className='absolute opacity-0 group-hover:opacity-60 transition duration-300 ease-in-out group-hover:bg-white h-20 w-20 xl:w-28 xl:h-28 rounded-full z-0 '>
+        <div className='flex items-center justify-center h-full'>
+          <p className='text-xl font-bold text-black opacity-100'>{name}</p>
+        </div>
+      </div>
     </div>
   );
 }

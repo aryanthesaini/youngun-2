@@ -15,11 +15,11 @@ export default function Home() {
       <section id='about' className='snap-center'>
         <About />
       </section>
+      <section id='clients' className='snap-start'>
+        <Clients />
+      </section>
       <section id='team' className='snap-center'>
         <Team />
-      </section>
-      <section id='clients' className='snap-start'>
-        <Clients/>
       </section>
     </div>
   );
