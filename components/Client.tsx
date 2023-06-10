@@ -4,16 +4,17 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 type Props = {
-  directionLeft?: boolean;
+  directionTop?: boolean;
   name: string;
   url: string;
 };
 
-function Client({ directionLeft, name, url }: Props) {
+function Client({ directionTop, name, url }: Props) {
   return (
     <div className='group relative flex cursor-pointer'>
       <motion.img
         initial={{
+          y: directionTop ? -200 : 200,
           opacity: 0,
         }}
         transition={{
@@ -21,6 +22,7 @@ function Client({ directionLeft, name, url }: Props) {
         }}
         whileInView={{
           opacity: 1,
+          y: 0,
         }}
         className='rounded-full border border-gray-500 object-cover w-20 h-20 xl:w-28 xl:h-28 filter group-hover:grayscale transition-duration-300 ease-in-out'
         src={url}
