@@ -2,6 +2,8 @@ import About from '@/components/About';
 import Clients from '@/components/Clients';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import Numbers from '@/components/Numbers';
+import Slider from '@/components/Numbers';
 import Team from '@/components/Team';
 import Image from 'next/image';
 
@@ -17,6 +19,10 @@ export default function Home() {
       </section>
       <section id='clients' className='snap-start'>
         <Clients />
+      </section>
+
+      <section id='slider' className='snap-center'>
+        <Numbers />
       </section>
       <section id='team' className='snap-center'>
         <Team />
