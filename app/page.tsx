@@ -1,5 +1,6 @@
 import About from '@/components/About';
 import Clients from '@/components/Clients';
+import ContactMe from '@/components/ContactMe';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Numbers from '@/components/Numbers';
@@ -21,11 +22,14 @@ export default function Home() {
         <Clients />
       </section>
 
-      <section id='slider' className='snap-center'>
+      <section id='slider' className='snap-start'>
         <Numbers />
       </section>
       <section id='team' className='snap-center'>
         <Team />
+      </section>
+      <section id='contactMe' className='snap-start'>
+        <ContactMe />
       </section>
     </div>
   );
