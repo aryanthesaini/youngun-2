@@ -26,7 +26,7 @@ function Team({}: Props) {
       <h3 className=' absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm py-4'>
         swipe to see more
       </h3>
-      <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory mt-20'>
+      <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory mt-20 scrollbar-thumb-red-500 scrollbar-thin'>
         <TeamMembers />
         <TeamMembers />
         <TeamMembers />
